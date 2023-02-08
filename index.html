@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>Antiques</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="navBar">
+            <img src="./assets/img/Siboria.png" alt="logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">How We Collect</a></li>
+                    <li><a href="#">Sell An Antique</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn-accent">Our Collections</button>
+        </div>
+    </section>
+    <section class="container">
+        <div class="hero">
+            <div class="intro">
+                <h1 class="intro-heading">
+                    World’s Biggest <span>Anitque Collection</span>
+                </h1>
+                <h2 class="intro-subheading">From they fine john he give of rich he. They age and draw mrs like.
+                    Improving end distrusts may instantly was household applauded incommode. </h2>
+                <div class="intro-buttons">
+                    <button class="btn btn-accent">Discover Now</button>
+                    <button class="btn btn-transparent btn-icon">
+                        <img src="./assets/img/Play.svg" alt="play button">
+                        Play Video
+                    </button>
+                </div>
+            </div>
+            <div class="antique">
+                <img src="./assets/img/antique.png" alt="antique" class="antique-image">
+                <div class="antique-details">
+                    <div class="antique-single-detail">
+                        <img src="./assets/img/head-icon.png" alt="" class="antique-icon">
+                        <div>
+                            <p>1332</p>
+                            <p class="small">Year</p>
+                        </div>
+                    </div>
+                    <div class="antique-single-detail">
+                        <img src="./assets/img/trophy-icon.png" alt="" class="antique-icon">
+                        <div>
+                            <p>29</p>
+                            <p class="small">Bids so far</p>
+                        </div>
+                    </div>
+                    <div class="antique-single-detail">
+                        <img src="./assets/img/building-icon.png" alt="" class="antique-icon">
+                        <div>
+                            <p>China</p>
+                            <p class="small">Origin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="search">
+            <form action="">
+                <div class="single-selection">
+                    <label for="location-select">Location</label>
+                    <select name="locatiion" id="location-select">
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                        <option value="option-4">Option 4</option>
+                    </select>
+                </div>
+                <div class="single-selection">
+                    <label for="religion-select">Religion</label>
+                    <select name="religion" id="religion-select">
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                        <option value="option-4">Option 4</option>
+                    </select>
+                </div>
+                <div class="single-selection">
+                    <label for="year-select">Year</label>
+                    <select name="year" id="year-select">
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                        <option value="option-4">Option 4</option>
+                    </select>
+                </div>
+                <div class="single-selection">
+                    <label for="type-select">Type</label>
+                    <select name="type" id="type-select">
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                        <option value="option-4">Option 4</option>
+                    </select>
+                </div>
+                <button class="btn btn-alt btn-icon">
+                    <img src="./assets/img/search.png" alt="play button">
+                    Search
+                </button>
+            </form>
+        </div>
+    </section>
+    <section class="container">
+        <div class="recent">
+            <h2 class="section-heading">
+                Recently Added
+            </h2>
+            <h3 class="section-subheading">Not thoughts all exercise blessing. Indulgence way everything joy alteration
+                boisterous the attachment.</h3>
+            <div class="card-buttons">
+                <button onclick="handleScrollLeft()" class="card-button-left">
+                    <img src="./assets/img/arrow.svg" alt="">
+                </button>
+                <button onclick="handleScrollRight()" class="card-button-right">
+                    <img src="./assets/img/arrow.svg" alt="">
+                </button>
+            </div>
+            <div class="recents-cards" id="cardsContainer">
+                <div class="single-card">
+                    <div class="card-image">
+                        <img src="./assets/img/sickle.jpg" alt="sickle">
+                    </div>
+                    <div class="card-heading">
+                        <h2>Yet bed any for travelling </h2>
+                        <span class="year">Year 1192</span>
+                        <span class="type">Weapon</span>
+                    </div>
+                    <div class="card-details">
+                        <div class="price">$899.50</div>
+                        <div class="btn btn-transparent btn-card">View Details</div>
+                    </div>
+                    <div class="bid-details">
+                        <span class="bids">14 bids so far</span>
+                        <span class="remaining">Bidding closes in 12 days</span>
+                    </div>
+                </div>
+                <div class="single-card">
+                    <div class="card-image">
+                        <img src="./assets/img/wheelbarrow.png" alt="wheelbarrow">
+                    </div>
+                    <div class="card-heading">
+                        <h2>Yet bed any for travelling </h2>
+                        <span class="year">Year 1192</span> <span class="type">Weapon</span>
+                    </div>
+                    <div class="card-details">
+                        <div class="price">$899.50</div>
+                        <div class="btn btn-transparent btn-card">View Details</div>
+                    </div>
+                    <div class="bid-details">
+                        <span class="bids">14 bids so far</span>
+                        <span class="remaining">Bidding closes in 12 days</span>
+                    </div>
+                </div>
+                <div class="single-card">
+                    <div class="card-image">
+                        <img src="./assets/img/abstract.png" alt="abstract">
+                    </div>
+                    <div class="card-heading">
+                        <h2>Yet bed any for travelling </h2>
+                        <span class="year">Year 1192</span> <span class="type">Weapon</span>
+                    </div>
+                    <div class="card-details">
+                        <div class="price">$899.50</div>
+                        <div class="btn btn-transparent btn-card">View Details</div>
+                    </div>
+                    <div class="bid-details">
+                        <span class="bids">14 bids so far</span>
+                        <span class="remaining">Bidding closes in 12 days</span>
+                    </div>
+                </div>
+                <div class="single-card">
+                    <div class="card-image">
+                        <img src="./assets/img/sickle.jpg" alt="sickle">
+                    </div>
+                    <div class="card-heading">
+                        <h2>Yet bed any for travelling </h2>
+                        <span class="year">Year 1192</span>
+                        <span class="type">Weapon</span>
+                    </div>
+                    <div class="card-details">
+                        <div class="price">$899.50</div>
+                        <div class="btn btn-transparent btn-card">View Details</div>
+                    </div>
+                    <div class="bid-details">
+                        <span class="bids">14 bids so far</span>
+                        <span class="remaining">Bidding closes in 12 days</span>
+                    </div>
+                </div>
+                <div class="single-card">
+                    <div class="card-image">
+                        <img src="./assets/img/wheelbarrow.png" alt="wheelbarrow">
+                    </div>
+                    <div class="card-heading">
+                        <h2>Yet bed any for travelling </h2>
+                        <span class="year">Year 1192</span> <span class="type">Weapon</span>
+                    </div>
+                    <div class="card-details">
+                        <div class="price">$899.50</div>
+                        <div class="btn btn-transparent btn-card">View Details</div>
+                    </div>
+                    <div class="bid-details">
+                        <span class="bids">14 bids so far</span>
+                        <span class="remaining">Bidding closes in 12 days</span>
+                    </div>
+                </div>
+                <div class="single-card">
+                    <div class="card-image">
+                        <img src="./assets/img/abstract.png" alt="abstract">
+                    </div>
+                    <div class="card-heading">
+                        <h2>Yet bed any for travelling </h2>
+                        <span class="year">Year 1192</span> <span class="type">Weapon</span>
+                    </div>
+                    <div class="card-details">
+                        <div class="price">$899.50</div>
+                        <div class="btn btn-transparent btn-card">View Details</div>
+                    </div>
+                    <div class="bid-details">
+                        <span class="bids">14 bids so far</span>
+                        <span class="remaining">Bidding closes in 12 days</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="gallery">
+            <h2 class="section-heading">
+                Top Categories
+            </h2>
+            <h3 class="section-subheading">Party we years to order allow asked of. We so opinion friends me message as
+                delight.</h3>
+            <div class="gallery-items">
+                <div class="category-1">
+                    <p class="item-count">122</p>
+                    <div>
+                        <h2 class="category">Weapons</h2>
+                        <h3 class="sub-category">Worefall</h3>
+                    </div>
+                </div>
+                <div class="category-2">
+                    <p class="item-count">35</p>
+                    <div>
+                        <h2 class="category">Statues</h2>
+                        <h3 class="sub-category">Worefall</h3>
+                    </div>
+                </div>
+                <div class="category-3">
+                    <p class="item-count">413</p>
+                    <div>
+                        <h2 class="category">Keep</h2>
+                        <h3 class="sub-category">Worefall</h3>
+                    </div>
+                </div>
+                <div class="category-4">
+                    <p class="item-count">71</p>
+                    <div>
+                        <h2 class="category">Skulls</h2>
+                        <h3 class="sub-category">Worefall</h3>
+                    </div>
+                </div>
+                <div class="category-5">
+                    <p class="item-count">98</p>
+                    <div>
+                        <h2 class="category">Watches</h2>
+                        <h3 class="sub-category">Worefall</h3>
+                    </div>
+                </div>
+                <div class="category-6">
+                    <p class="item-count">812</p>
+                    <div>
+                        <h2 class="category">Furniture</h2>
+                        <h3 class="sub-category">Worefall</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
