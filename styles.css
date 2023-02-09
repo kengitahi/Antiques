@@ -156,6 +156,10 @@ body {
     margin-block: 70px;
 }
 
+.container .inverse {
+    color: white;
+}
+
 .btn {
     border-radius: 8px;
     border: none;
@@ -261,7 +265,8 @@ nav ul {
     line-height: 16px;
 }
 
-nav ul a {
+nav ul a,
+footer p {
     text-decoration: none;
     color: var(--main-color);
     padding-block: 5px;
@@ -572,4 +577,133 @@ nav ul a:hover {
 .category-6 {
     background: url("./assets/img/chair.png");
     grid-area: 2/4/3/5;
+}
+
+.testimonials {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-auto-columns: 1fr 1fr;
+}
+
+.testimonial-img {
+    margin-inline: auto;
+}
+
+.testimonials .section-subheading {
+    font-style: italic;
+    margin-bottom: 48px;
+}
+
+.feedback-card {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.feedback-name {
+    font-family: var(--main-font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #000000;
+}
+
+.feedback-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.01em;
+    color: var(--subheadings-alt-color);
+    margin-block: 4px 8px;
+}
+
+.feedback-rating img {
+    width: 13.5px;
+    height: 13.5px;
+    border-radius: 0.5px;
+}
+
+.subscribe,
+.subscribe form {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.subscribe {
+    grid-template-columns: 1fr 1fr;
+    background: var(--alt-color);
+    padding-inline: 70px;
+    border-radius: 20px;
+    height: 350px;
+}
+
+.subscribe form {
+    background: white;
+    border-radius: 8px;
+    padding: 5px 5px;
+    margin-top: 24px;
+}
+
+.subscribe form input {
+    border: none;
+    outline: none;
+    font-family: var(--alt-font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;
+    color: var(--main-color);
+    height: 100%;
+}
+
+.subscribe form button {
+    background: var(--main-accent-color);
+    color: white;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe form img {
+    margin-top: 10px;
+}
+
+.subscribe>img {
+    margin-left: auto;
+    margin-top: -180px;
+}
+
+.footer {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-heading {
+    font-family: var(--alt-font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #020000;
+    margin-bottom: 24px;
+}
+
+.footer nav ul {
+    grid-auto-flow: row;
+}
+
+.footer .contact a {
+    color: var(--alt-accent-color);
+    text-decoration: none;
+    ;
 }
